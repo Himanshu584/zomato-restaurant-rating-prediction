@@ -33,7 +33,7 @@ There are 17 columns in out dataset namely :  `'url', 'address', 'name', 'online
        `listed_in(city)` - city in which the restaurant is listed
 
 
-## EDA
+# EDA
 
 #### - Top restaurant chains in bangalore:
 ![Top restaurant chains](https://github.com/Himanshu584/zomato-restaurant-rating-prediction/blob/main/pics/top_restaurant_chains.png)
@@ -42,6 +42,18 @@ These are the biggest and most popular restaurant chains in bangalore and hence 
 #### - Restaurant offering online ordering and table booking facilities
 ![online_ordering](https://github.com/Himanshu584/zomato-restaurant-rating-prediction/blob/main/pics/online_orders.png) ![table_booking](https://github.com/Himanshu584/zomato-restaurant-rating-prediction/blob/main/pics/table_booking.png)
 
-on further analysis we found out that restaurants which accept online orders and whose cost of 2 plates is moderately affordable are the restaurants with highest ratings
+#### - Restaurant rating vs cost_for_2 based on online ordering facility
+we found out that restaurants which accept online orders and whose cost of 2 plates is moderately affordable are the restaurants with highest ratings
+
 ![rate_vs_costfor2](https://github.com/Himanshu584/zomato-restaurant-rating-prediction/blob/main/pics/rate_vs_costfor2.png)
+
+## Analysis of Location
+
+#### location with highest number of restaurant
+![location_restaurant_max](https://github.com/Himanshu584/zomato-restaurant-rating-prediction/blob/main/pics/location_restaurants_max.png)
+
+#### location with highest & lowest average cost for 2
+![location_highest_avg_cost](https://github.com/Himanshu584/zomato-restaurant-rating-prediction/blob/main/pics/location_highest_average_cost.png)
+       ![location_lowest_avg_cost](https://github.com/Himanshu584/zomato-restaurant-rating-prediction/blob/main/pics/location_lowest_average_cost.png)
+
 
