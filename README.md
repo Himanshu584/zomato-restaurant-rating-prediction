@@ -37,7 +37,11 @@ There are 17 columns in out dataset namely :  `'url', 'address', 'name', 'online
 
 #### - Top restaurant chains in bangalore:
 ![Top restaurant chains](https://github.com/Himanshu584/zomato-restaurant-rating-prediction/blob/main/pics/top_restaurant_chains.png)
-These are the biggest and most popular restaurant chains in bangalore and hence , these restaurants being so popular are prone to have a high rating
+
+#### - Top rated restaurants in banagalore
+![top voted restaurants](https://github.com/Himanshu584/zomato-restaurant-rating-prediction/blob/main/pics/most_voted_restaurants.png)
+
+We can clearly see that biggest restaurant chains are not the most voted ones
 
 #### - Restaurant offering online ordering and table booking facilities
 ![online_ordering](https://github.com/Himanshu584/zomato-restaurant-rating-prediction/blob/main/pics/online_orders.png) ![table_booking](https://github.com/Himanshu584/zomato-restaurant-rating-prediction/blob/main/pics/table_booking.png)
