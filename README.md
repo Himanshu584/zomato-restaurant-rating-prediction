@@ -41,3 +41,7 @@ These are the biggest and most popular restaurant chains in bangalore and hence 
 
 #### - Restaurant offering online ordering and table booking facilities
 ![online_ordering](https://github.com/Himanshu584/zomato-restaurant-rating-prediction/blob/main/pics/online_orders.png) ![table_booking](https://github.com/Himanshu584/zomato-restaurant-rating-prediction/blob/main/pics/table_booking.png)
+
+on further analysis we found out that restaurants which accept online orders and whose cost of 2 plates is moderately affordable are the restaurants with highest ratings
+![rate_vs_costfor2](https://github.com/Himanshu584/zomato-restaurant-rating-prediction/blob/main/pics/rate_vs_costfor2.png)
+
