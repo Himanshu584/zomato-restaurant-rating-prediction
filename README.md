@@ -1,5 +1,7 @@
 # zomato-restaurant-rating-prediction
 dataset used = https://www.kaggle.com/datasets/himanshupoddar/zomato-bangalore-restaurants?resource=download
+linked github repo (application building) :- https://github.com/Himanshu584/restaurant-rating-app
+deployed version of app :- https://himanshu584-restaurant-rating-app-app-6nusqf.streamlitapp.com/
 
 STAGES OF PROJECT :
 1. Preprocessing & Feature engeenering
