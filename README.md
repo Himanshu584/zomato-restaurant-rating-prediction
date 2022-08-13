@@ -47,7 +47,8 @@ we checked for percentages of missing values , we found `rating` had many missin
        ![rate_null_dropped](https://github.com/Himanshu584/zomato-restaurant-rating-prediction/blob/main/pics/rate_null_removed.png)
  
  2. we fill the null values with median
-       ![rate_null_filled](https://github.com/Himanshu584/zomato-restaurant-rating-prediction/blob/main/pics/rate_null_filled.png)
+      
+      ![rate_null_filled](https://github.com/Himanshu584/zomato-restaurant-rating-prediction/blob/main/pics/rate_null_filled.png)
        
  By looking at these distribution curves , we see that it is more favourable to drop the null values than filling them with median.
  
