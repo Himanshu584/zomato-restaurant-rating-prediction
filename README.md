@@ -35,7 +35,25 @@ There are 17 columns in out dataset namely :  `'url', 'address', 'name', 'online
        `menu_item` - list of items served in restaurant
        `listed_in(type)` - type of restaurant (buffet,food truck,dining ,etc)
        `listed_in(city)` - city in which the restaurant is listed
+       
 
+# Preprocessing & Data Cleaning
+For preprocessing and data cleaning , we first found what columns will add value to our analysis and model building and which not.
+At first glance , we could see that url, address , phone, dish_liked, reviews_list, menu_item are of no use to us so we drop these columns.
+further we checked for data types and corrected the needed ones (eg: we found that rating was string and needed to be converted to float)
+we checked for percentages of missing values , we found `rating` had many missing values which could not be ignored. so we had 2 approaches
+1. we drop missing values : 
+       by droping missing values we found that distribution was normal 
+       ![rate_null_dropped](https://github.com/Himanshu584/zomato-restaurant-rating-prediction/blob/main/pics/rate_null_removed.png)
+ 
+ 2. we fill the null values with median
+       ![rate_null_filled](https://github.com/Himanshu584/zomato-restaurant-rating-prediction/blob/main/pics/rate_null_filled.png)
+       
+ By looking at these distribution curves , we see that it is more favourable to drop the null values than filling them with median.
+ 
+ Further, main preprocessing state involved encoding the catagorical variables . For this we used the `Label-Encoder` technique and not `One-Hot encoding` because
+ using one hot encoding would increase the dimentions of our dataset tremendously.
+ we then created a encoded datatable that could be used to map the encodings to their respective original catagory. 
 
 # EDA
 
@@ -45,7 +63,7 @@ There are 17 columns in out dataset namely :  `'url', 'address', 'name', 'online
 #### - Top rated restaurants in banagalore
 ![top voted restaurants](https://github.com/Himanshu584/zomato-restaurant-rating-prediction/blob/main/pics/most_voted_restaurants.png)
 
-We can clearly see that biggest restaurant chains are not the most voted ones
+We can clearly see that biggest restaurant chains are not the most voted ones, so lets find what factors lead to high voting and rating
 
 #### - Restaurant offering online ordering and table booking facilities
 ![online_ordering](https://github.com/Himanshu584/zomato-restaurant-rating-prediction/blob/main/pics/online_orders.png) ![table_booking](https://github.com/Himanshu584/zomato-restaurant-rating-prediction/blob/main/pics/table_booking.png)
@@ -55,7 +73,6 @@ we found out that restaurants which accept online orders and whose cost of 2 pla
 
 ![rate_vs_costfor2](https://github.com/Himanshu584/zomato-restaurant-rating-prediction/blob/main/pics/rate_vs_costfor2.png)
 
-## Analysis of Location
 
 #### location with highest number of restaurant
 ![location_restaurant_max](https://github.com/Himanshu584/zomato-restaurant-rating-prediction/blob/main/pics/location_restaurants_max.png)
@@ -84,9 +101,22 @@ While performing EDA we found out that major factors that led to high rating of 
 
 we encoded the catagorical variables with label encoder because if we used One-hot encoding , it would have increased our dimentions enormously
 
-## Model Building
+# Model Building
 Since this is a regression problem , we used various regression models namely : linear regression , decision tree , random forest , extra tree regressor, XGboost,etc
 
-Extra tree regressor gave us the best result with accuracy of about 99.99% and smallest mse ( mean squared error )
+`Extra tree regressor` gave us the best result with accuracy of about 99.99% and smallest mse ( mean squared error )
 
+# Model saving and loading
+we used the `Pickle` library for saving and loading this model and encoded dataframe
+
+
+
+
+
+# application building
+The user interface is built in streamlit library that has various components like selectbox, textfield that helps make applications easily.
+we made the interface such that user can select from catagorical variables and enter the numeric fields . these fields after getting encoded from encoding dataframe in backend if needed will be converted into a 2-d list which will pass into the pickled model for futher processing. after the prediction is made , it will be reflected onto users window.
+
+# application deployment
+this app is deployed on `streamlit share cloud platform`.
 
