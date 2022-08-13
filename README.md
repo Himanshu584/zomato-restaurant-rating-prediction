@@ -64,6 +64,8 @@ we found out that restaurants which accept online orders and whose cost of 2 pla
 ![location_highest_avg_cost](https://github.com/Himanshu584/zomato-restaurant-rating-prediction/blob/main/pics/location_highest_average_cost.png)
        ![location_lowest_avg_cost](https://github.com/Himanshu584/zomato-restaurant-rating-prediction/blob/main/pics/location_lowest_average_cost.png)
 
+#### Most Popular cuisines of bangalore
+![most_popular_cuisines](https://github.com/Himanshu584/zomato-restaurant-rating-prediction/blob/main/pics/most_popular_cusines.png)
 
 While performing EDA we found out that major factors that led to high rating of restaurants were :
 * wether a restaurant has online ordering and table booking facilty or not
