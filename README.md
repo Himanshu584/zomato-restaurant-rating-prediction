@@ -65,3 +65,18 @@ we found out that restaurants which accept online orders and whose cost of 2 pla
        ![location_lowest_avg_cost](https://github.com/Himanshu584/zomato-restaurant-rating-prediction/blob/main/pics/location_lowest_average_cost.png)
 
 
+While performing EDA we found out that major factors that led to high rating of restaurants were :
+* wether a restaurant has online ordering and table booking facilty or not
+* whether the price of the restauarant is affordable to most public 
+* type of restaurant, type and type of cuisines
+* location , city 
+* number of votes given to a particular restaurant
+
+we encoded the catagorical variables with label encoder because if we used One-hot encoding , it would have increased our dimentions enormously
+
+## Model Building
+Since this is a regression problem , we used various regression models namely : linear regression , decision tree , random forest , extra tree regressor, XGboost,etc
+
+Extra tree regressor gave us the best result with accuracy of about 99.99% and smallest mse ( mean squared error )
+
+
